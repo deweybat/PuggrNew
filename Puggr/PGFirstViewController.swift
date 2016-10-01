@@ -8,18 +8,14 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
-    override func viewDidLoad() {
+class PGFirstViewController: UIViewController{
+    override func viewDidLoad() -> Void{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() -> Void{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

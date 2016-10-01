@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C9588561D9F3CE200745255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588551D9F3CE200745255 /* AppDelegate.swift */; };
-		4C9588581D9F3CE200745255 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588571D9F3CE200745255 /* FirstViewController.swift */; };
-		4C95885A1D9F3CE200745255 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588591D9F3CE200745255 /* SecondViewController.swift */; };
+		4C9588561D9F3CE200745255 /* PGAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588551D9F3CE200745255 /* PGAppDelegate.swift */; };
+		4C9588581D9F3CE200745255 /* PGFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588571D9F3CE200745255 /* PGFirstViewController.swift */; };
+		4C95885A1D9F3CE200745255 /* PGSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588591D9F3CE200745255 /* PGSecondViewController.swift */; };
 		4C95885D1D9F3CE200745255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C95885B1D9F3CE200745255 /* Main.storyboard */; };
 		4C95885F1D9F3CE200745255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95885E1D9F3CE200745255 /* Assets.xcassets */; };
 		4C9588621D9F3CE200745255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9588601D9F3CE200745255 /* LaunchScreen.storyboard */; };
@@ -36,9 +36,9 @@
 
 /* Begin PBXFileReference section */
 		4C9588521D9F3CE200745255 /* Puggr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puggr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C9588551D9F3CE200745255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C9588571D9F3CE200745255 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4C9588591D9F3CE200745255 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4C9588551D9F3CE200745255 /* PGAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGAppDelegate.swift; sourceTree = "<group>"; };
+		4C9588571D9F3CE200745255 /* PGFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGFirstViewController.swift; sourceTree = "<group>"; };
+		4C9588591D9F3CE200745255 /* PGSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSecondViewController.swift; sourceTree = "<group>"; };
 		4C95885C1D9F3CE200745255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C95885E1D9F3CE200745255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C9588611D9F3CE200745255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 		4C9588541D9F3CE200745255 /* Puggr */ = {
 			isa = PBXGroup;
 			children = (
-				4C9588551D9F3CE200745255 /* AppDelegate.swift */,
-				4C9588571D9F3CE200745255 /* FirstViewController.swift */,
-				4C9588591D9F3CE200745255 /* SecondViewController.swift */,
+				4C9588551D9F3CE200745255 /* PGAppDelegate.swift */,
+				4C9588571D9F3CE200745255 /* PGFirstViewController.swift */,
+				4C9588591D9F3CE200745255 /* PGSecondViewController.swift */,
 				4C95885B1D9F3CE200745255 /* Main.storyboard */,
 				4C95885E1D9F3CE200745255 /* Assets.xcassets */,
 				4C9588601D9F3CE200745255 /* LaunchScreen.storyboard */,
@@ -190,6 +190,7 @@
 		4C95884A1D9F3CE200745255 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PG;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Michael Hulet";
@@ -265,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C95885A1D9F3CE200745255 /* SecondViewController.swift in Sources */,
-				4C9588561D9F3CE200745255 /* AppDelegate.swift in Sources */,
-				4C9588581D9F3CE200745255 /* FirstViewController.swift in Sources */,
+				4C95885A1D9F3CE200745255 /* PGSecondViewController.swift in Sources */,
+				4C9588561D9F3CE200745255 /* PGAppDelegate.swift in Sources */,
+				4C9588581D9F3CE200745255 /* PGFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K3ZLWH83BT;
 				INFOPLIST_FILE = Puggr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.puggr.Puggr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K3ZLWH83BT;
 				INFOPLIST_FILE = Puggr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.puggr.Puggr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
