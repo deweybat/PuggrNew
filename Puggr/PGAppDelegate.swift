@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class PGAppDelegate: UIResponder, UIApplicationDelegate{
@@ -16,6 +18,8 @@ class PGAppDelegate: UIResponder, UIApplicationDelegate{
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool{
         // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
+        FIRApp.configure()
         return true
     }
 
