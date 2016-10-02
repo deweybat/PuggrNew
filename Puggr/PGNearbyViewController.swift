@@ -90,9 +90,20 @@ class PGNearbyViewController: UIViewController, MKMapViewDelegate{
             pin.animatesDrop = true
             pin.isDraggable = true
             pin.canShowCallout = true
+            pin.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openMaps(_:))))
             return pin
         }
         return nil
+    }
+
+    @objc func openMaps(_ sender: UITapGestureRecognizer) -> Void{
+        let pin = sender.view as! MKAnnotationView
+        if pin.isSelected{
+            let annotation = pin.annotation!
+            let item = MKMapItem(placemark: MKPlacemark(coordinate: annotation.coordinate, addressDictionary: nil))
+            item.name = annotation.title!
+            MKMapItem.openMaps(with: [MKMapItem.forCurrentLocation(), item], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+        }
     }
 }
 
