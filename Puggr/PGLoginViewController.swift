@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import CoreLocation
 
 class PGLoginViewController: UIViewController{
     @IBOutlet weak var emailField: UITextField!
@@ -24,6 +25,9 @@ class PGLoginViewController: UIViewController{
     @IBAction func authenticate() -> Void{
         FIRAuth.auth()?.signIn(withEmail: emailField.text!, password: passwordField.text!, completion: {(user: FIRUser?, error: Error?) in
             if error == nil && user != nil{
+                if CLLocationManager.authorizationStatus() != .authorizedAlways{
+                    CLLocationManager().requestWhenInUseAuthorization()
+                }
                 self.navigationController?.dismiss(animated: true, completion: nil)
             }
         })

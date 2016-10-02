@@ -32,7 +32,7 @@ extern NSString *const FIREmailPasswordAuthProviderID;
 /** @fn init
     @brief This class is not meant to be initialized.
  */
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 

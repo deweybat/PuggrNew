@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import IQKeyboardManagerSwift
 
+public let db = FIRDatabase.database().reference()
+
 @UIApplicationMain
 class PGAppDelegate: UIResponder, UIApplicationDelegate{
 

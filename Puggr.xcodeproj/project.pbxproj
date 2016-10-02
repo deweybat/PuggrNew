@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7CF9F01DA108A600ADFFFE /* PGNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7CF9EF1DA108A600ADFFFE /* PGNewEventViewController.swift */; };
 		4C9588561D9F3CE200745255 /* PGAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588551D9F3CE200745255 /* PGAppDelegate.swift */; };
-		4C9588581D9F3CE200745255 /* PGFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588571D9F3CE200745255 /* PGFirstViewController.swift */; };
-		4C95885A1D9F3CE200745255 /* PGSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588591D9F3CE200745255 /* PGSecondViewController.swift */; };
+		4C9588581D9F3CE200745255 /* PGNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588571D9F3CE200745255 /* PGNearbyViewController.swift */; };
+		4C95885A1D9F3CE200745255 /* PGProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588591D9F3CE200745255 /* PGProfileViewController.swift */; };
 		4C95885D1D9F3CE200745255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C95885B1D9F3CE200745255 /* Main.storyboard */; };
 		4C95885F1D9F3CE200745255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95885E1D9F3CE200745255 /* Assets.xcassets */; };
 		4C9588621D9F3CE200745255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9588601D9F3CE200745255 /* LaunchScreen.storyboard */; };
 		4C95886D1D9F3CE300745255 /* PuggrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C95886C1D9F3CE300745255 /* PuggrTests.swift */; };
 		4C9588781D9F3CE300745255 /* PuggrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588771D9F3CE300745255 /* PuggrUITests.swift */; };
-		4C9588861D9F41A700745255 /* PGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588851D9F41A700745255 /* PGUser.swift */; };
 		4C9588971D9F4EE800745255 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9588961D9F4EE800745255 /* Locksmith.framework */; };
 		4C9588991D9F6BC100745255 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9588981D9F6BC100745255 /* IQKeyboardManagerSwift.framework */; };
 		4C95889B1DA0058D00745255 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C95889A1DA0058D00745255 /* GoogleService-Info.plist */; };
 		4C95889C1DA0058D00745255 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C95889A1DA0058D00745255 /* GoogleService-Info.plist */; };
 		4C95889D1DA0058D00745255 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C95889A1DA0058D00745255 /* GoogleService-Info.plist */; };
-		4C9588AE1DA00C3C00745255 /* PGDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588AD1DA00C3C00745255 /* PGDatabase.swift */; };
 		4C9588B01DA010B100745255 /* PGAuthenticatingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588AF1DA010B100745255 /* PGAuthenticatingTabBarController.swift */; };
 		4C9588B21DA02C8F00745255 /* PGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588B11DA02C8F00745255 /* PGLoginViewController.swift */; };
 		4C9588B41DA031E200745255 /* PGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9588B31DA031E200745255 /* PGSignUpViewController.swift */; };
+		4CAC4BFF1DA1150A00510950 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CAC4BFE1DA1150A00510950 /* FirebaseDatabase.framework */; };
 		4CEBC0711DA0477200F86F61 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC06C1DA0477200F86F61 /* FirebaseAnalytics.framework */; };
 		4CEBC0721DA0477200F86F61 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC06D1DA0477200F86F61 /* FirebaseInstanceID.framework */; };
 		4CEBC0731DA0477200F86F61 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC06E1DA0477200F86F61 /* GoogleInterchangeUtilities.framework */; };
@@ -32,6 +32,8 @@
 		4CEBC0751DA0477200F86F61 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC0701DA0477200F86F61 /* GoogleUtilities.framework */; };
 		4CEBC0781DA0478700F86F61 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC0761DA0478700F86F61 /* FirebaseAuth.framework */; };
 		4CEBC0791DA0478700F86F61 /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC0771DA0478700F86F61 /* GoogleNetworkingUtilities.framework */; };
+		4CEBC07D1DA09CF500F86F61 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC07C1DA09CF500F86F61 /* CoreLocation.framework */; };
+		4CEBC07F1DA09D5000F86F61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBC07E1DA09D5000F86F61 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7CF9EF1DA108A600ADFFFE /* PGNewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGNewEventViewController.swift; sourceTree = "<group>"; };
 		4C9588521D9F3CE200745255 /* Puggr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puggr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9588551D9F3CE200745255 /* PGAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGAppDelegate.swift; sourceTree = "<group>"; };
-		4C9588571D9F3CE200745255 /* PGFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGFirstViewController.swift; sourceTree = "<group>"; };
-		4C9588591D9F3CE200745255 /* PGSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSecondViewController.swift; sourceTree = "<group>"; };
+		4C9588571D9F3CE200745255 /* PGNearbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGNearbyViewController.swift; sourceTree = "<group>"; };
+		4C9588591D9F3CE200745255 /* PGProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGProfileViewController.swift; sourceTree = "<group>"; };
 		4C95885C1D9F3CE200745255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C95885E1D9F3CE200745255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C9588611D9F3CE200745255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,17 +69,16 @@
 		4C9588731D9F3CE300745255 /* PuggrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuggrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9588771D9F3CE300745255 /* PuggrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuggrUITests.swift; sourceTree = "<group>"; };
 		4C9588791D9F3CE300745255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C9588851D9F41A700745255 /* PGUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGUser.swift; sourceTree = "<group>"; };
 		4C9588881D9F448400745255 /* Puggr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Puggr-Bridging-Header.h"; sourceTree = "<group>"; };
 		4C9588901D9F450700745255 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4C9588931D9F4D8800745255 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		4C9588961D9F4EE800745255 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
 		4C9588981D9F6BC100745255 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		4C95889A1DA0058D00745255 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4C9588AD1DA00C3C00745255 /* PGDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGDatabase.swift; sourceTree = "<group>"; };
 		4C9588AF1DA010B100745255 /* PGAuthenticatingTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGAuthenticatingTabBarController.swift; sourceTree = "<group>"; };
 		4C9588B11DA02C8F00745255 /* PGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGLoginViewController.swift; sourceTree = "<group>"; };
 		4C9588B31DA031E200745255 /* PGSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGSignUpViewController.swift; sourceTree = "<group>"; };
+		4CAC4BFE1DA1150A00510950 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
 		4CEBC06C1DA0477200F86F61 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		4CEBC06D1DA0477200F86F61 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		4CEBC06E1DA0477200F86F61 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		4CEBC0771DA0478700F86F61 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		4CEBC07A1DA0483500F86F61 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		4CEBC07B1DA0490200F86F61 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4CEBC07C1DA09CF500F86F61 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4CEBC07E1DA09D5000F86F61 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAC4BFF1DA1150A00510950 /* FirebaseDatabase.framework in Frameworks */,
+				4CEBC07F1DA09D5000F86F61 /* MapKit.framework in Frameworks */,
+				4CEBC07D1DA09CF500F86F61 /* CoreLocation.framework in Frameworks */,
 				4CEBC0741DA0477200F86F61 /* GoogleSymbolUtilities.framework in Frameworks */,
 				4CEBC0791DA0478700F86F61 /* GoogleNetworkingUtilities.framework in Frameworks */,
 				4C9588991D9F6BC100745255 /* IQKeyboardManagerSwift.framework in Frameworks */,
@@ -148,11 +155,11 @@
 			isa = PBXGroup;
 			children = (
 				4C9588551D9F3CE200745255 /* PGAppDelegate.swift */,
-				4C9588AD1DA00C3C00745255 /* PGDatabase.swift */,
 				4C9588871D9F444500745255 /* Users & Authentication */,
-				4C9588571D9F3CE200745255 /* PGFirstViewController.swift */,
-				4C9588591D9F3CE200745255 /* PGSecondViewController.swift */,
+				4C9588571D9F3CE200745255 /* PGNearbyViewController.swift */,
+				4C9588591D9F3CE200745255 /* PGProfileViewController.swift */,
 				4C95885B1D9F3CE200745255 /* Main.storyboard */,
+				4C7CF9EF1DA108A600ADFFFE /* PGNewEventViewController.swift */,
 				4C95885E1D9F3CE200745255 /* Assets.xcassets */,
 				4C9588601D9F3CE200745255 /* LaunchScreen.storyboard */,
 				4C9588631D9F3CE200745255 /* Info.plist */,
@@ -185,7 +192,6 @@
 				4C9588B11DA02C8F00745255 /* PGLoginViewController.swift */,
 				4C9588B31DA031E200745255 /* PGSignUpViewController.swift */,
 				4C9588AF1DA010B100745255 /* PGAuthenticatingTabBarController.swift */,
-				4C9588851D9F41A700745255 /* PGUser.swift */,
 			);
 			name = "Users & Authentication";
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 		4C95888F1D9F450700745255 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CEBC07E1DA09D5000F86F61 /* MapKit.framework */,
+				4CEBC07C1DA09CF500F86F61 /* CoreLocation.framework */,
 				4CEBC06B1DA0476500F86F61 /* Firebase */,
 				4C9588931D9F4D8800745255 /* Cartfile */,
 				4C9588981D9F6BC100745255 /* IQKeyboardManagerSwift.framework */,
@@ -207,6 +215,7 @@
 			children = (
 				4CEBC07A1DA0483500F86F61 /* Firebase.h */,
 				4CEBC07B1DA0490200F86F61 /* module.modulemap */,
+				4CAC4BFE1DA1150A00510950 /* FirebaseDatabase.framework */,
 				4CEBC0761DA0478700F86F61 /* FirebaseAuth.framework */,
 				4CEBC0771DA0478700F86F61 /* GoogleNetworkingUtilities.framework */,
 				4CEBC06C1DA0477200F86F61 /* FirebaseAnalytics.framework */,
@@ -379,14 +388,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C95885A1D9F3CE200745255 /* PGSecondViewController.swift in Sources */,
-				4C9588861D9F41A700745255 /* PGUser.swift in Sources */,
+				4C95885A1D9F3CE200745255 /* PGProfileViewController.swift in Sources */,
 				4C9588561D9F3CE200745255 /* PGAppDelegate.swift in Sources */,
 				4C9588B41DA031E200745255 /* PGSignUpViewController.swift in Sources */,
-				4C9588581D9F3CE200745255 /* PGFirstViewController.swift in Sources */,
+				4C7CF9F01DA108A600ADFFFE /* PGNewEventViewController.swift in Sources */,
+				4C9588581D9F3CE200745255 /* PGNearbyViewController.swift in Sources */,
 				4C9588B01DA010B100745255 /* PGAuthenticatingTabBarController.swift in Sources */,
 				4C9588B21DA02C8F00745255 /* PGLoginViewController.swift in Sources */,
-				4C9588AE1DA00C3C00745255 /* PGDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -524,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -545,7 +553,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Puggr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = net.puggr.Puggr;
@@ -570,7 +578,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Puggr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = net.puggr.Puggr;

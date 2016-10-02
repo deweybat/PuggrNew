@@ -31,7 +31,7 @@ extern NSString *const FIRFacebookAuthProviderID;
 /** @fn init
     @brief This class should not be initialized.
  */
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
 

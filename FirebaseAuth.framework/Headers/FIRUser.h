@@ -69,7 +69,7 @@ typedef void (^FIRSendEmailVerificationCallback)(NSError *_Nullable error);
     @remarks To retrieve the current user, use @c FIRAuth.currentUser. To sign a user
         in or out, use the methods on @c FIRAuth.
  */
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /** @fn updateEmail:completion:
     @brief Updates the email address for the user. On success, the cached user profile data is
@@ -260,7 +260,7 @@ typedef void (^FIRSendEmailVerificationCallback)(NSError *_Nullable error);
 /** @fn init
     @brief Please use @c FIRUser.profileChangeRequest
  */
-- (nullable instancetype)init NS_UNAVAILABLE;
+- (nonnull instancetype)init NS_UNAVAILABLE;
 
 /** @property displayName
     @brief The user's display name.
