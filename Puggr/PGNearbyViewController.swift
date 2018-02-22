@@ -14,10 +14,13 @@ import Firebase
 
 class PGNearbyViewController: UIViewController, MKMapViewDelegate{
     @IBOutlet weak var map: MKMapView!
+
     override func viewDidLoad() -> Void{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        map.delegate = self
+        map.delegate = self	
+        
+        let db = Database.database().reference()
         let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(addNewLocation(_:)))
         map.addGestureRecognizer(recognizer)
         let header = #imageLiteral(resourceName: "logo")
@@ -40,7 +43,8 @@ class PGNearbyViewController: UIViewController, MKMapViewDelegate{
             }
             change?.commitChanges(completion: nil)
         }
-        db.child("events").observe(.value) { (snapshot: DataSnapshot) in
+        
+        db.observe(.value) { (snapshot: DataSnapshot) in
             let data = snapshot.value as! [String: [String: Any]]
             for (_, info) in data{
                 let annotation = MKPointAnnotation()

@@ -11,8 +11,6 @@ import Firebase
 import FirebaseDatabase
 import IQKeyboardManagerSwift
 
-public let db = DatabaseReference.self
-
 @UIApplicationMain
 class PGAppDelegate: UIResponder, UIApplicationDelegate{
 

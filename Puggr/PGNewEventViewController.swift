@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class PGNewEventViewController: UIViewController, MKMapViewDelegate, UITextFieldDelegate{
     @IBOutlet weak var map: MKMapView!
