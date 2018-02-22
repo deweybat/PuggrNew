@@ -65,7 +65,7 @@ class PGNewEventViewController: UIViewController, MKMapViewDelegate, UITextField
 
     @IBAction func saveEvent() -> Void{
         let owner: String
-        switch FIRAuth.auth()!.currentUser!.email!{
+        switch Auth.auth().currentUser!.email!{
             case "mhuletdev@gmail.com":
                 owner = "Michael Hulet"
             case "egrisso1@vols.utk.edu":
@@ -75,7 +75,7 @@ class PGNewEventViewController: UIViewController, MKMapViewDelegate, UITextField
             case "dbdatbui@gmail.com":
                 owner = "Dat Bui"
             default:
-                owner = FIRAuth.auth()!.currentUser!.email!
+                owner = Auth.auth().currentUser!.email!
         }
         db.child("events").childByAutoId().setValue(["latitude": point.coordinate.latitude, "longitude": point.coordinate.longitude, "activity": activityField.text!, "people": attendanceStepper.value, "owner": owner])
         let _ = navigationController?.popViewController(animated: true)

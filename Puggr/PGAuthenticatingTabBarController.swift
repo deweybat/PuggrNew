@@ -18,7 +18,7 @@ class PGAuthenticatingNavigationController: UINavigationController{
     override func viewDidAppear(_ animated: Bool) -> Void{
         super.viewDidAppear(animated)
         // Do any additional setup after loading the view.
-        if FIRAuth.auth()?.currentUser == nil{
+        if Auth.auth().currentUser == nil{
             present(UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PGAuthenticationFlow"), animated: false, completion: nil)
         }
     }

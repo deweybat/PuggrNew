@@ -23,7 +23,7 @@ class PGSignUpViewController: UIViewController{
     }
     @IBAction func signUp() -> Void{
         if passwordField.text == confirmPasswordField.text{
-            FIRAuth.auth()?.createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user: FIRUser?, error: Error?) in
+            Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user: User?, error: Error?) in
                 if error == nil && user != nil{
                     self.navigationController?.dismiss(animated: true, completion: nil)
                 }

@@ -25,17 +25,17 @@ class PGProfileViewController: UIViewController{
         profilePictureView.layer.borderColor = UIColor.white.cgColor
         profilePictureView.layer.masksToBounds = true
         profilePictureView.layer.borderWidth = 1
-        profilePictureView.image = UIImage(named: FIRAuth.auth()!.currentUser!.email!)
+        profilePictureView.image = UIImage(named: Auth.auth().currentUser!.email!)
         print(profilePictureView.frame)
         let border = CALayer()
         let width = CGFloat(2.0)
         border.borderColor = #colorLiteral(red: 0.9450980392, green: 0.5647058824, blue: 0.5254901961, alpha: 1).cgColor
         border.frame = CGRect(x: 0, y: nameField.frame.size.height - width, width:  nameField.frame.size.width, height: nameField.frame.size.height)
-        nameField.text = FIRAuth.auth()!.currentUser!.displayName!
+        nameField.text = Auth.auth().currentUser!.displayName!
         border.borderWidth = width
         nameField.layer.addSublayer(border)
         nameField.layer.masksToBounds = true
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)]
     }
     @IBAction func dismiss() -> Void{
         dismiss(animated: true, completion: nil)

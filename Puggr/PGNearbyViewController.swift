@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseDatabase
+import Firebase
 
 class PGNearbyViewController: UIViewController, MKMapViewDelegate{
     @IBOutlet weak var map: MKMapView!
@@ -22,9 +24,9 @@ class PGNearbyViewController: UIViewController, MKMapViewDelegate{
         let logoView = UIImageView(frame: CGRect(x: 0, y: 0, width: header.size.width, height: header.size.height))
         logoView.image = header
         navigationItem.titleView = logoView
-        if let name = FIRAuth.auth()?.currentUser?.displayName, !name.contains(" "){
-            let change = FIRAuth.auth()?.currentUser?.profileChangeRequest()
-            switch FIRAuth.auth()!.currentUser!.email!{
+        if let name = Auth.auth().currentUser?.displayName, !name.contains(" "){
+            let change = Auth.auth().currentUser?.createProfileChangeRequest()
+            switch Auth.auth().currentUser!.email!{
                 case "mhuletdev@gmail.com":
                     change?.displayName = "Michael Hulet"
                 case "egrisso1@vols.utk.edu":
@@ -34,11 +36,11 @@ class PGNearbyViewController: UIViewController, MKMapViewDelegate{
                 case "dbdatbui@gmail.com":
                     change?.displayName = "Dat Bui"
                 default:
-                    change?.displayName = FIRAuth.auth()!.currentUser!.email!
+                    change?.displayName = Auth.auth().currentUser!.email!
             }
             change?.commitChanges(completion: nil)
         }
-        db.child("events").observe(.value) { (snapshot: FIRDataSnapshot) in
+        db.child("events").observe(.value) { (snapshot: DataSnapshot) in
             let data = snapshot.value as! [String: [String: Any]]
             for (_, info) in data{
                 let annotation = MKPointAnnotation()

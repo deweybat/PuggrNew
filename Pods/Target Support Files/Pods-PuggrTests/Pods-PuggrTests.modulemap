@@ -1,0 +1,6 @@
+framework module Pods_PuggrTests {
+  umbrella header "Pods-PuggrTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
